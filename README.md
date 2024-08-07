@@ -32,7 +32,6 @@
 <hr>
 <h3> How to run this program </h3>
 
-<code> cd client </code> <br>
-<code> npm install </code><br>
-<code> npm run build </code><br>
-<code> npm run dev </code><br>
+<code> npm run build </code>
+<code> npm run start </code>
+
