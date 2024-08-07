@@ -8,7 +8,7 @@ export const tokenVerify = (request, response, next) => {
         return next(errHandler(401, 'Unauthorized!'));
     }
 
-    jwt.verify( token, process.env.JWT_SECRET, (err, user) => {
+    jwt.verify( token, process.env.JWT_KEY, (err, user) => {
         if (err) {
             return next(errHandler(401, 'Unauthorised'));
         }

@@ -3,7 +3,7 @@ import { errHandler } from "../utilities/err.js";
 
 
 { /* Create Category function for admin */}
-export const createCategory = async (request, response, next) => {
+export const createCategories = async (request, response, next) => {
     if (!request.user.isAdmin) {
         return next(errHandler(403, 'You can\'t create category'));
     }
@@ -29,7 +29,7 @@ export const createCategory = async (request, response, next) => {
 };
 
 {/* Function to retrive category from database */}
-export const getCategory = async (request, response, next) => {
+export const getCategories = async (request, response, next) => {
     try {
         const categories = await Categories.find()
         response.status(200).json(categories);
@@ -40,7 +40,7 @@ export const getCategory = async (request, response, next) => {
 
 
 {/* Function to delete category from database */}
-export const deleteCategory = async (request, response, next) => {
+export const removeCategory = async (request, response, next) => {
     const category = await Categories.findById(request.params.categoryId);
     if (!category) {
         return next(errHandler(404, 'Category not found!'));

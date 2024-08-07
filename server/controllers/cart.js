@@ -66,7 +66,7 @@ export const getCartItems = async (request, response, next) => {
 /**
  This function delete a cart item from the user's cart
  */
-export const deleteCartItem = async (request, response, next) => {
+export const removeCartItem = async (request, response, next) => {
     try {
         // Find the cart of the user making the request
 
