@@ -1,5 +1,5 @@
 import Users from "../db_models/users.js";
-import { errHandler } from "../utilities/error.js";
+import { errHandler } from "../utilities/err.js";
 
 
 { /* Delete user account */ }

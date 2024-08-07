@@ -1,5 +1,5 @@
 import Products from "../db_models/products.js";
-import { errHandler } from "../utilities/error.js";
+import { errHandler } from "../utilities/err.js";
 import Categories from "../db_models/categories.js";
 
 

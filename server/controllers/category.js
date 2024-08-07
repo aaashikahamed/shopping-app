@@ -1,5 +1,5 @@
 import Categories from "../db_models/categories.js";
-import { errHandler } from "../utilities/error.js";
+import { errHandler } from "../utilities/err.js";
 
 
 { /* Create Category function for admin */}

@@ -1,6 +1,6 @@
 import Carts from '../db_models/carts.js';
 import Products from '../db_models/products.js';
-import { errHandler } from '../utilities/error.js';
+import { errHandler } from '../utilities/err.js';
 
 export const addCart = async (request, response, next) => {
     const { userId, productId, quantity } = request.body;
