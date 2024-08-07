@@ -37,3 +37,14 @@ app.get('*', (request, response) => {
 app.listen(3001, () => {
     console.log("Listening on port 3000");
 });
+
+
+app.use((err, request, response, next ) => {
+    const code = err.code || 500;
+    const msg = err.msg || "Server Error";
+    response.status(code).json({
+        success: false,
+        code,
+        msg
+    })
+})
