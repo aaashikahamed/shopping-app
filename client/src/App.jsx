@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from "./pages/Home"
 import SignIn from "./pages/SignIn"
 import Header from "./components/Header"
+import FooterSec from "./components/Footer"
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/signin" element={<SignIn />} />
       </Routes>
+      <FooterSec/>
     </BrowserRouter>
   )
 }

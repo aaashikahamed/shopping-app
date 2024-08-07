@@ -5,7 +5,7 @@ import { MdAccountCircle } from "react-icons/md";
 
 function Header(){
     return(
-        <Navbar className='border-b-2 shadow-sm bg-[#e8defa]'>
+        <Navbar className='border-b-2 shadow-sm '>
         <Link to='/' className='self-center whitespace-nowrap text-sm sm:text-xl font-bold '>
             <span className='font-bold text-[#394f9c] text-xl'>A2Z</span>
         </Link>
