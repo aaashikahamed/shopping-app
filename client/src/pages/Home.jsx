@@ -14,7 +14,7 @@ function Home(){
             <img
               src={hero}
               alt=""
-              className="h-[500px] w-full object-right sm:object-center object-cover "
+              className="h-[450] w-full object-right sm:object-center object-cover "
             />
             <div className="absolute top-40 start-10 sm:start-[22rem] md:start-[32rem] lg:start-[42rem] xl:start-[52rem]">
               <p className="text-3xl font-bold text-white">
@@ -33,7 +33,7 @@ function Home(){
 
     <div className="max-w-7xl mx-auto p-2">
         <div className='text-center mt-10'>
-          <h1 className='text-3xl font-bold mt-2 text-[#3d52a0] font-serif'>Trending Products</h1>
+          <h1 className='text-3xl font-bold mt-2 text-[#3d52a0] font-serif'>Products</h1>
         </div>
 
 
