@@ -1,6 +1,8 @@
 import Categories from "../db_models/categories.js";
 import { errHandler } from "../utilities/error.js";
 
+
+{ /* Create Category function for admin */}
 export const createCategory = async (request, response, next) => {
     if (!request.user.isAdmin) {
         return next(errHandler(403, 'You can\'t create category'));
@@ -26,6 +28,7 @@ export const createCategory = async (request, response, next) => {
     }
 };
 
+{/* Function to retrive category from database */}
 export const getCategory = async (request, response, next) => {
     try {
         const categories = await Categories.find()
@@ -36,6 +39,7 @@ export const getCategory = async (request, response, next) => {
 };
 
 
+{/* Function to delete category from database */}
 export const deleteCategory = async (request, response, next) => {
     const category = await Categories.findById(request.params.categoryId);
     if (!category) {
@@ -53,6 +57,7 @@ export const deleteCategory = async (request, response, next) => {
     }
 };
 
+{/* Function to edit category from database */}
 export const editCategory = async (request, response, next) => {
     const category = await Categories.findById(request.params.categoryId);
     if (!category) {

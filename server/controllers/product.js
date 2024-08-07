@@ -2,6 +2,8 @@ import Products from "../db_models/products.js";
 import { errHandler } from "../utilities/error.js";
 import Categories from "../db_models/categories.js";
 
+
+{/* Admin function to create products */}
 export const createProduct = async (request, response, next) => {
     if (!request.user.isAdmin) {
         next(errHandler(403, 'You can\'t  create a product'))
@@ -20,6 +22,8 @@ export const createProduct = async (request, response, next) => {
     }
 };
 
+
+{/* Retrive all products from database */}
 export const getAllProducts = async (request, response, next) => {
     try {
         const getProducts = await Products.find().populate('categoryId', 'name');
@@ -29,6 +33,8 @@ export const getAllProducts = async (request, response, next) => {
     }
 };
 
+
+{/* Delete products from database */}
 export const deleteProduct = async (request, response, next) => {
     if (!request.user.isAdmin || request.user.id !== request.params.userId) {
         return next(errHandler(403, 'You can\'t delete this product'))
@@ -45,6 +51,8 @@ export const deleteProduct = async (request, response, next) => {
     }
 };
 
+
+{/* Here function to edit product */ }
 export const editProduct = async (request, response, next) => {
     if (!request.user.isAdmin || request.user.id !== request.params.userId) {
         return next(errHandler(403, 'You are not allowed to delete this product'))
@@ -63,6 +71,8 @@ export const editProduct = async (request, response, next) => {
     }
 };
 
+
+{ /* function to retrive particular product data from database  */}
 export const getProduct = async (request, response, next) => {
     try {
         const getProduct = await Products.findById(request.params.productId).populate('categoryId', 'productName');
@@ -73,6 +83,8 @@ export const getProduct = async (request, response, next) => {
     
 };
 
+
+{/* Function to retrive product information by category */}
 export const getProductsByCategory = async (request, response, next) => {
     try {
         const categoryId = request.params.categoryId;
