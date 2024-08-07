@@ -17,7 +17,7 @@ function SignIn(){
   
           <div className="sm:w-full px-2 md:px-12">
   
-            <h3 className='text-[#3d52a0] text-2xl font-bold'>Login</h3>
+            <h3 className='text-[#3b51a1] text-2xl font-bold'>Login</h3>
             <p className='mt-5 '>Dont have an account, <Link to='/sign-up' className='text-blue-800 font-bold hover:underline cursor-pointer whitespace-nowrap'>Register</Link></p>
   
             <form className=" gap-5 mt-5 flex flex-col "  autoComplete='off'>   
@@ -25,7 +25,7 @@ function SignIn(){
   
               <input type="password" id='password' className='rounded-xl p-3 border-none shadow-md' placeholder='Enter password' />
   
-              <button type='submit'  className='rounded-xl py-2 bg-[#3b52a5] text-white hover:bg-[#3c519e] disabled:bg-[#4f62aa] font-bold'>
+              <button type='submit'  className='rounded-xl py-2 bg-[#3850a7] text-white hover:bg-[#374c97] disabled:bg-[#4f62aa] font-bold'>
                 Login
               </button>
             </form>
