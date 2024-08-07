@@ -20,7 +20,7 @@ function Home(){
               <p className="text-3xl font-bold text-white">
                 Welcome To Our Store
               </p>
-              <button className="bg-black text-white font-bold px-5 py-2 rounded-md mt-6 hover:bg-gray-700">
+              <button className="bg-black text-white font-bold px-5 py-2 rounded-md mt-6 hover:bg-gray-800">
                 View Products
               </button>
             </div>
@@ -39,10 +39,10 @@ function Home(){
 
 
         <div className='flex flex-wrap gap-5 mt-10 '>
-            <div  className='bg-white shadow-md hover:shadow-lg transition-shadow overflow-hidden rounded-lg w-[140px] sm:w-[250px]'>
-              <img src={hero} alt="" className='h-12 sm:h-[250px] w-12 sm:w-[250px] object-cover hover:scale-105 transition-scale duration-300'/>
+            <div  className='bg-white shadow-md hover:shadow-lg transition-shadow overflow-hidden rounded-lg w-10 sm:w-16'>
+              <img src={hero} alt="" className='h-12 sm:h-16 w-12 sm:w-16 object-cover hover:scale-105 transition-scale duration-400'/>
               <div className='p-3 flex flex-col gap-2 w-full mt-3'>
-                <h3 className='text-sm sm:text-lg font-bold text-slate-700 line-clamp-1'>Product Name</h3>
+                <h3 className='text-sm sm:text-lg font-bold text-slate-800 line-clamp-1'>Product Name</h3>
                 <p className='text-xs sm:text-sm text-gray-600 line-clamp-2'>Product Description</p>
                 
                   <div className='flex flex-col sm:flex-row sm:items-center gap-2'>
@@ -63,15 +63,15 @@ function Home(){
           <h1 className='text-3xl font-bold mt-2 text-[#3d52a0] font-serif'>Offer Products</h1>
         </div>
         <div className='flex flex-wrap gap-5 mt-10'>
-            <div  className='bg-white shadow-md hover:shadow-lg transition-shadow overflow-hidden rounded-lg w-[140px] sm:w-[250px]' >
-              <img src={hero} alt="" className='h-[200px] sm:h-[250px] w-[200px] sm:w-[250px] object-cover hover:scale-105 transition-scale duration-300'/>
+            <div  className='bg-white shadow-md hover:shadow-lg transition-shadow overflow-hidden rounded-lg w-10 sm:w-16' >
+              <img src={hero} alt="" className='h-16 sm:h-16 w-16 sm:w-16 object-cover hover:scale-105 transition-scale duration-400'/>
               <div className='p-3 flex flex-col gap-2 w-full mt-3'>
-                <h3 className='text-sm sm:text-lg font-bold text-slate-700 line-clamp-1'>Offer Product Name</h3>
+                <h3 className='text-sm sm:text-lg font-bold text-slate-800 line-clamp-1'>Offer Product Name</h3>
                 <p className='text-xs sm:text-sm text-gray-600 line-clamp-2'>Offer Product Description</p>
                 
                   <div className='flex flex-col sm:flex-row sm:items-center gap-2'>
-                    <p className='text-red-600 line-through text-sm'>100/=</p>
-                    <p className='text-green-600 font-bold'>200/=</p>
+                    <p className='text-red-800 line-through text-sm'>100/=</p>
+                    <p className='text-green-800 font-bold'>200/=</p>
                   </div>
                     <p className='font-bold'>100/=</p>
               </div>
