@@ -5,6 +5,7 @@ import SignIn from "./pages/SignIn"
 import Header from "./components/Header"
 import FooterSec from "./components/Footer"
 import SignUp from "./pages/SignUp"
+import Products from "./pages/Products"
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/products" element={< Products/>} />
       </Routes>
       <FooterSec/>
     </BrowserRouter>
