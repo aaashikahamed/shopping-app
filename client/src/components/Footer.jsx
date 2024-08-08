@@ -6,17 +6,15 @@ import { Footer } from 'flowbite-react'
 export default function FooterSec() {
 
   return (
-    <Footer container className='border border-[#3c53a3] border-t-8 '>
+    <Footer container className='border border-[#3b52a5] border-t-8 '>
         <div className="w-full max-w-7xl mx-auto">
             <div className="grid w-full justify-between sm:flex md:grid-cols-1">
 
                 <div className="mt-5">
                 <Link to='/' className='self-center whitespace-nowrap text-sm sm:text-xl font-semibold '>
-                    <span className='font-bold text-[#3d53a3] text-xl'>A2Z</span>
+                    <span className='font-bold text-[#3b52a3] text-xl'>A2Z</span>
                 </Link>
-                    <p className='text-slate-600 mt-3 sm:ml-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum hic cupiditate minus maiores dolorem minima obcaecati pariatur atque. Laborum, porro esse libero dolorem dolore error? Quasi neque nihil odio unde?</p>
-                </div>
-                
+                    
                     <div className="grid grid-cols-2 gap-8 mt-4 sm:grid-cols-3 sm:gap-6">
                     <div>
                         <Footer.Title title='Follow Us'/>
@@ -38,7 +36,7 @@ export default function FooterSec() {
                         </Footer.LinkGroup>
                     </div>
                 </div>
-
+                </div>
             </div>
             <Footer.Divider />
             <div className="w-full sm:flex sm:items-center sm:justify-between">
