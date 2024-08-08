@@ -4,6 +4,7 @@ import Home from "./pages/Home"
 import SignIn from "./pages/SignIn"
 import Header from "./components/Header"
 import FooterSec from "./components/Footer"
+import SignUp from "./pages/SignUp"
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signin" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
       <FooterSec/>
     </BrowserRouter>
