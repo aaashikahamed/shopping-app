@@ -107,7 +107,6 @@ export default function Product() {
                     
                     <div className="flex flex-col gap-3 mt-7 w-48 ">
                         <span className="p-2 border bg-[#3d52a0] text-white font-semibold rounded-md cursor-pointer hover:bg-[#4f62aa] flex items-center justify-center gap-1" onClick={handleAddToCart}><FaCartPlus />Add to Cart</span>
-                        <span className="flex p-2 items-center mt-1 gap-2 hover:text-rose-600 cursor-pointer"><FaRegHeart/>Add to Wishlist</span>
                     </div>
 
                     <div className="mt-7">
