@@ -1,42 +1,71 @@
 import { Link } from 'react-router-dom'
-import {  FaGithubSquare , FaInstagramSquare , FaTwitterSquare  } from 'react-icons/fa'
-// import { Footer } from 'flowbite-react'
+import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitterX } from 'react-icons/bs'
+import { Footer } from 'flowbite-react'
 
 
-export default function FooterSec() {
+export default function FooterCon() {
 
   return (
-    <footer
-  className="flex flex-row flex-wrap items-center justify-center  w-full py-6 text-center border-t gap-y-6 gap-x-12 border-blue-gray-50 md:justify-between">
-  <p className="block font-sans text-base antialiased font-normal leading-relaxed text-blue-gray-900">
-    © 2024 A2Z
-  </p>
-  <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
-    <li>
-      <a href="#"
-        className="block font-sans text-base antialiased font-normal leading-relaxed transition-colors text-blue-gray-900 hover:text-blue-500 focus:text-blue-500">
-        About Us
-      </a>
-    </li>
-    <li>
-      <a href="#"
-        className="block font-sans text-base antialiased font-normal leading-relaxed transition-colors text-blue-gray-900 hover:text-blue-500 focus:text-blue-500">
-        License
-      </a>
-    </li>
-    <li>
-      <a href="#"
-        className="block font-sans text-base antialiased font-normal leading-relaxed transition-colors text-blue-gray-900 hover:text-blue-500 focus:text-blue-500">
-        Contribute
-      </a>
-    </li>
-    <li>
-      <a href="#"
-        className="block font-sans text-base antialiased font-normal leading-relaxed transition-colors text-blue-gray-900 hover:text-blue-500 focus:text-blue-500">
-        Contact Us
-      </a>
-    </li>
-  </ul>
-</footer> 
+    <Footer container className='border border-[#3d52a0] border-t-8 '>
+        <div className="w-full max-w-7xl mx-auto">
+            <div className="grid w-full justify-between sm:flex md:grid-cols-1">
+
+                <div className="mt-5">
+                <Link to='/' className='self-center whitespace-nowrap text-sm sm:text-xl font-semibold '>
+                    <span className='font-bold text-[#3d52a0] text-xl'>A2Z Shop</span>
+                </Link>
+                    <p className='text-slate-500 mt-3 sm:ml-3'>"Embark on a journey through the vibrant world of gadgets with us. <br />Stay connected for reviews, updates, and engaging community discussions."</p>
+                </div>
+                
+                <div className="grid grid-cols-2 gap-8 mt-4 sm:grid-cols-3 sm:gap-6">
+                    <div>
+                        <Footer.Title title='About'/>
+                        <Footer.LinkGroup col>
+                            <Footer.Link href='https://www.linkedin.com/in/aashikahamed12/' target='_blank' rel='noopener noreferrer'>
+                                A Aashik Ahamed
+                            </Footer.Link>
+                            <Footer.Link href='#' target='_blank' rel='noopener noreferrer'>
+                                LinkedIn
+                            </Footer.Link>
+                        </Footer.LinkGroup>
+                    </div>
+                    <div>
+                        <Footer.Title title='Follow'/>
+                            <Footer.LinkGroup col>
+                                <Footer.Link href='https://www.github.com/aaashikahamed' target='_blank' rel='noopener noreferrer'>
+                                    GitHub
+                                </Footer.Link>
+                                <Footer.Link href='#' target='_blank' rel='noopener noreferrer'>
+                                    Discord
+                                </Footer.Link>
+                        </Footer.LinkGroup>
+                    </div>
+                    <div>
+                        <Footer.Title title='Legal'/>
+                            <Footer.LinkGroup col>
+                                <Footer.Link href='#' target='_blank' rel='noopener noreferrer'>
+                                    Privacy Policy
+                                </Footer.Link>
+                                <Footer.Link href='#' target='_blank' rel='noopener noreferrer'>
+                                    Terms  &amp; Conditions
+                                </Footer.Link>
+                        </Footer.LinkGroup>
+                    </div>
+                </div>
+
+            </div>
+            <Footer.Divider />
+            <div className="w-full sm:flex sm:items-center sm:justify-between">
+                <Footer.Copyright href='#' by="A2Z Shop" year={new Date().getFullYear()}/>
+                <div className="flex gap-6 sm:mt-0 mt-4 sm:justify-center">
+                    <Footer.Icon target='_blank' href='#'  icon={BsFacebook}/>
+                    <Footer.Icon target='_blank' href='#' icon={BsInstagram}/>
+                    <Footer.Icon target='_blank' href='#' icon={BsTwitterX}/>
+                    <Footer.Icon target='_blank' href='https://www.github.com/aaashikahamed' icon={BsGithub}/>
+                    <Footer.Icon target='_blank' href='#' icon={BsDribbble}/>
+                </div>
+            </div>
+        </div>
+    </Footer>
   )
 }

@@ -1,190 +1,107 @@
-import { Link } from "react-router-dom";
-import image from "../assets/images/banner.jpg";
-function Products() {
-  return (
-    <div className="max-w-7xl mx-auto p-3 min-h-screen">
-      <h1 className="text-3xl font-bold border-b pb-4 flex items-center gap-1 mt-3">
-        Products{" "}
-      </h1>
-      return (
-      <div className="flex flex-col gap-5 mt-6">
-        <div>
-          <h2 className="text-2xl font-bold"></h2>
-          <Link className="text-blue-700 hover:underline font-bold text-sm">
-            View all products
-          </Link>
-        </div>
+import React, { useEffect, useState } from 'react';
+import { FaHeadphones } from 'react-icons/fa';
+import { Link, useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-        <div className="flex flex-wrap gap-5">
-          <div className="flex flex-wrap gap-4 mt-9 ">
-            <div className="max-w-sm rounded overflow-hidden shadow-lg">
-              <img
-                className="w-full"
-                src={image}
-                alt="Sunset in the mountains"
-              />
-              <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
-                <p className="text-gray-700 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
-                </p>
-              </div>
-              <div className="px-6 pt-4 pb-2">
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  #photography
-                </span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  #travel
-                </span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  #winter
-                </span>
-              </div>
-            </div>
-
-            <div className="max-w-sm rounded overflow-hidden shadow-lg">
-              <img
-                className="w-full"
-                src={image}
-                alt="Sunset in the mountains"
-              />
-              <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
-                <p className="text-gray-700 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
-                </p>
-              </div>
-              <div className="px-6 pt-4 pb-2">
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  #photography
-                </span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  #travel
-                </span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  #winter
-                </span>
-              </div>
-            </div>
-
-            <div className="max-w-sm rounded overflow-hidden shadow-lg">
-              <img
-                className="w-full"
-                src={image}
-                alt="Sunset in the mountains"
-              />
-              <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
-                <p className="text-gray-700 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
-                </p>
-              </div>
-              <div className="px-6 pt-4 pb-2">
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  #photography
-                </span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  #travel
-                </span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  #winter
-                </span>
-              </div>
-            </div>
-
-            <div className="max-w-sm rounded overflow-hidden shadow-lg">
-              <img
-                className="w-full"
-                src={image}
-                alt="Sunset in the mountains"
-              />
-              <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
-                <p className="text-gray-700 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
-                </p>
-              </div>
-              <div className="px-6 pt-4 pb-2">
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  #photography
-                </span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  #travel
-                </span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  #winter
-                </span>
-              </div>
-            </div>
-
-            <div className="max-w-sm rounded overflow-hidden shadow-lg">
-              <img
-                className="w-full"
-                src={image}
-                alt="Sunset in the mountains"
-              />
-              <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
-                <p className="text-gray-700 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
-                </p>
-              </div>
-              <div className="px-6 pt-4 pb-2">
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  #photography
-                </span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  #travel
-                </span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  #winter
-                </span>
-              </div>
-            </div>
-
-            <div className="max-w-sm rounded overflow-hidden shadow-lg">
-              <img
-                className="w-full"
-                src={image}
-                alt="Sunset in the mountains"
-              />
-              <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
-                <p className="text-gray-700 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
-                </p>
-              </div>
-              <div className="px-6 pt-4 pb-2">
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  #photography
-                </span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  #travel
-                </span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  #winter
-                </span>
-              </div>
-            </div>
+export default function Products() {
+  const [productByCategory, setProductByCategory] = useState({});
+  const [categories, setCategories] = useState([]);
+  const navigate = useNavigate();
 
 
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+  useEffect(() => {
+    const fetchCategories = async () => {
+      try {
+        const res = await fetch('/api/category/getCategory');
+        const data = await res.json();
+        if (res.ok) {
+          setCategories(data);
+        }
+      } catch (error) {
+        toast.error(error.message);
+      }
+    };
+
+    fetchCategories();
+  }, []);
+
+  useEffect(() => {
+    const fetchProductsByCategory = async () => {
+      try {
+        const productsByCategory = {};
+        await Promise.all(
+          categories.map(async (category) => {
+            const res = await fetch(`/api/product/productByCategory/${category._id}`);
+            const data = await res.json();
+            if (res.ok) {
+              productsByCategory[category._id] = data;
+            }
+          })
+        );
+        setProductByCategory(productsByCategory);
+      } catch (error) {
+        toast.error(error.message);
+      }
+    };
+
+    if (categories.length > 0) {
+      fetchProductsByCategory();
+    }
+  }, [categories]);
+
+  // console.log(productByCategory);
+
+  const handleProductPage = (productId) => {
+    navigate(`/product/${productId}`)
 }
 
-export default Products;
+const getRandomProducts = (products, count) => {
+  const shuffled = [...products].sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, count);
+}
+
+  return (
+  <div className='max-w-6xl mx-auto p-3 min-h-screen'>
+    <h1 className='text-3xl font-semibold border-b pb-4 flex items-center gap-1 mt-3'>Products <FaHeadphones /></h1>
+
+    {Object.keys(productByCategory).map((categoryId) => {
+      const categoryData = productByCategory[categoryId];
+      const randomProducts = getRandomProducts(categoryData.products, 4);
+      
+      return (
+        <div key={categoryData.category._id} className='flex flex-col gap-5 mt-6'>
+          <div>
+            <h2 className='text-2xl font-semibold'>{categoryData.category.name}</h2>
+            <Link to={`/categoryProducts/${categoryData.category._id}`} className='text-blue-600 hover:underline font-semibold text-sm'>View all products</Link>
+          </div>
+          
+          <div className='flex flex-wrap gap-5'>
+
+            {randomProducts.map((product) => (
+
+              <div key={product._id} className='bg-white flex sm:flex-col shadow-md hover:shadow-lg transition-shadow overflow-hidden rounded-lg w-full sm:w-[250px]' onClick={() => handleProductPage(product._id)}>
+                <img src={product.imageUrls[0]} alt="" className='h-[160px] sm:h-[230px] w-[150px] sm:w-[250px] object-cover hover:scale-105 transition-scale duration-300'/>
+                <div className='p-3 flex flex-col gap-2 w-full mt-3'>
+                  <h3 className='text-lg font-semibold text-slate-700 line-clamp-1'>{product.name}</h3>
+                  <p className='text-sm text-gray-600 line-clamp-2'>{product.description}</p>
+                  {product.offer ? (
+                    <div className='flex items-center gap-2'>
+                      <p className='text-red-600 line-through text-sm'>Rs. {product.regularPrice.toLocaleString('en-US')} /=</p>
+                      <p className='text-green-600 font-semibold'> Rs.{product.discountPrice.toLocaleString('en-US')} /=</p>
+                    </div>
+                  ) : (
+                      <p className='font-semibold'>Rs. {product.regularPrice.toLocaleString('en-US')} /=</p>
+                  )}
+                </div>
+              </div>
+            ))} 
+
+          </div>
+
+        </div>
+      );
+    })}
+  </div>
+  )
+}
